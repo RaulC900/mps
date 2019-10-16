@@ -1,5 +1,6 @@
 package com.example.testproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.graphics.Color;
@@ -31,9 +32,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.main_activity);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+      //  ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.main_activity);
 
         loginButton = (Button)findViewById(R.id.loginButton);
         usernameBox = (EditText)findViewById(R.id.usernameBox);
@@ -50,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
                         passwordBox.getText().toString().equals("admin")) {
                     Toast.makeText(getApplicationContext(),
                             "Redirecting...",Toast.LENGTH_SHORT).show();
+                    Intent launchActivity= new Intent(MainActivity.this,GradingActivity.class);
+                    MainActivity.this.startActivity(launchActivity);
                 }else{
                     Toast.makeText(getApplicationContext(), "Wrong Credentials", Toast.LENGTH_SHORT).show();
 

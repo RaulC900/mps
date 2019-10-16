@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/question1"
+            android:text="Originality Consider: Exhibits creativity"/>
+
+        <RatingBar
+            android:id="@+id/rating1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question1"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="0.5"
+            android:theme="@style/RatingBar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/question2"
+            android:layout_below="@+id/rating1"
+            android:text="Craftsmanship Consider: Artist’s skills in the use of material"/>
+
+        <RatingBar
+            android:id="@+id/rating2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question2"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="0.5"
+            android:theme="@style/RatingBar" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/question3"
+            android:layout_below="@+id/rating2"
+            android:text="Composition Consider: Effective use of forms or abstract techniques"/>
+
+        <RatingBar
+            android:id="@+id/rating3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="0.5"
+            android:layout_below="@+id/question3"
+            android:theme="@style/RatingBar" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/question4"
+            android:layout_below="@+id/rating3"
+            android:text="Unity and Variety Consider: Balance of elements, repetition, visual rhythm"/>
+
+        <RatingBar
+            android:id="@+id/rating4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="0.5"
+            android:layout_below="@+id/question4"
+            android:theme="@style/RatingBar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/question5"
+            android:layout_below="@+id/rating4"
+            android:text="Use of space Consider: Perspective and mass"/>
+
+        <RatingBar
+            android:id="@+id/rating5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="0.5"
+            android:layout_below="@+id/question5"
+            android:theme="@style/RatingBar" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/question6"
+            android:layout_below="@+id/rating5"
+            android:text="Interpretation Consider: Clarity of the theme to the viewer"/>
+
+        <RatingBar
+            android:id="@+id/rating6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="0.5"
+            android:layout_below="@+id/question6"
+            android:theme="@style/RatingBar" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/question7"
+            android:layout_below="@+id/rating6"
+            android:text="Overall impression"/>
+
+        <RatingBar
+            android:id="@+id/rating7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="0.5"
+            android:layout_below="@+id/question7"
+            android:theme="@style/RatingBar" />
+    </RelativeLayout>
+</layout>
